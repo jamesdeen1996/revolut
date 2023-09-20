@@ -1,0 +1,17 @@
+<html>
+    <div id="lightning"></div>
+    <script src="https://clipperventures--s1sales.sandbox.my.site.com/leadFormsOut/lightning/lightning.out.js"></script>
+
+    <script>
+         $Lightning.use("c:leadFormsOutApp", function() {
+            window.$Lightning.createComponent("c:leadFormsOut", {},
+                  "lightning",
+                  function(cmp) {
+                    console.log("LWC component was created");
+                  }
+              );
+            },
+           'https://clipperventures--s1sales.sandbox.my.site.com/leadFormsOut/'
+          );
+    </script>
+</html>
